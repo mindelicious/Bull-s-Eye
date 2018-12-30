@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        updateNumber()
+//        updateNumbers()
         restartGame()
      
         let roundedValue = slider.value.rounded()
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     
     @IBAction func showAlert(_ sender: Any) {
         compareNumbers()
-        updateNumber()
+        updateNumbers()
 
     }
     
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         
         scoreLabel.text = String(0)
         updateRound = 1
-        updateNumber()
+        updateNumbers()
         
         
     }
@@ -171,7 +171,7 @@ class ViewController: UIViewController {
      
     }
     
-    func updateNumber() {
+    func updateNumbers() {
         
         randomNumber = Int.random(in: 1...100)
         targetLabel.text = String(randomNumber)
