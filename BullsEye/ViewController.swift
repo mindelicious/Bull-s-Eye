@@ -23,8 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        updateNumbers()
+     
         restartGame()
      
         let roundedValue = slider.value.rounded()
@@ -96,7 +95,6 @@ class ViewController: UIViewController {
             present(alert, animated: true, completion: nil)
           
             
-            
         case 1...5 :
             
             let alert = UIAlertController(title: "Perfect", message: "You hit: \(currentValue).\n That's 200 points.", preferredStyle: .alert)
@@ -112,8 +110,6 @@ class ViewController: UIViewController {
             
             present(alert, animated: true, completion: nil)
             
-            
-           
             
         case 6...10 :
             
@@ -131,7 +127,6 @@ class ViewController: UIViewController {
             present(alert, animated: true, completion: nil)
             
             
-           
     
         case 11...20 :
             
@@ -148,7 +143,6 @@ class ViewController: UIViewController {
             
             present(alert, animated: true, completion: nil)
             
-           
        
             
         default:
